@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wawayne - Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#FEF2F7;
+--main:#F6A5C9;
+--dark:#E889B5;
+--white:#FFFFFF;
+--glow:rgba(246,165,201,0.4);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
+body{
+background:var(--bg);
+display:flex;
+justify-content:center;
+position:relative;
+overflow-x:hidden;
+min-height:100vh;
+}
+/* Floating Emojis Background Animation */
+.floating-emojis {
+position:fixed;
+top:0;left:0;width:100%;height:100%;
+pointer-events:none;
+z-index:0;
+overflow:hidden;
+}
+.floating-emoji {
+position:absolute;
+font-size:16px;
+opacity:0.25;
+animation:floatUp 12s linear infinite;
+}
+@keyframes floatUp {
+0% { transform: translateY(105vh) rotate(0deg); opacity: 0; }
+10% { opacity: 0.25; }
+90% { opacity: 0.25; }
+100% { transform: translateY(-5vh) rotate(360deg); opacity: 0; }
+}
+.container{
+max-width:500px;
+width:100%;
+padding:20px 15px 40px;
+position:relative;
+z-index:1;
+}
+.section{
+background:var(--white);
+border-radius:20px;
+padding:25px 20px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+border:2px solid var(--main);
+}
+h1,h2,h3{color:var(--dark);margin-bottom:15px;}
+.center{text-align:center;}
+.logo{
+width:150px;height:150px;
+border-radius:50%;
+overflow:hidden;
+margin:0 auto 20px;
+box-shadow:0 6px 20px var(--glow);
+}
+.logo img{width:100%;height:100%;object-fit:cover;}
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+.badge{
+background:#fff;
+padding:8px 16px;
+border-radius:25px;
+box-shadow:0 4px 10px var(--glow);
+font-size:13px;
+color:var(--dark);
+}
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:25px;
+text-decoration:none;
+margin-top:15px;
+font-weight:500;
+transition: all 0.3s ease;
+}
+.btn-outline{
+background:#fff;
+border:2px dashed var(--main);
+color:var(--dark);
+}
+.btn-main{
+background:var(--main);
+color:#fff;
+}
+.step{
+display:flex;
+align-items:center;
+justify-content:space-between; /* ช่วยดันหัวใจไปฝั่งขวาสุด */
+gap:12px;
+margin-bottom:12px;
+}
+.step-content {
+display:flex;
+align-items:center;
+gap:12px;
+}
+.step-num{
+background:var(--main);
+color:#fff;
+width:26px;height:26px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+flex-shrink:0;
+}
+.price-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+background:#fffcfd;
+padding:10px 15px;
+border-radius:15px;
+}
+.portfolio-container {
+display:flex;
+gap:12px;
+margin-top:15px;
+}
+.portfolio-box {
+flex:1;
+text-align:center;
+}
+.portfolio-img {
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+border:1px solid #ffeef5;
+}
+.footer{
+text-align:center;
+margin-top:30px;
+}
+.socials{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-top:15px;
+}
+.socials a{
+flex:1;
+max-width:120px;
+text-align:center;
+padding:8px;
+border-radius:25px;
+background:#fff;
+text-decoration:none;
+color:var(--dark);
+font-size:13px;
+border:1px solid #ffeef5;
+}
+.small{font-size:12px;opacity:.7;margin-top:10px;}
+</style>
+</head>
+<body>
+
+<div class="floating-emojis">
+  <div class="floating-emoji" style="left:10%; animation-delay:0s; animation-duration:14s;">🎀</div>
+  <div class="floating-emoji" style="left:25%; animation-delay:2s; animation-duration:18s;">💗</div>
+  <div class="floating-emoji" style="left:40%; animation-delay:5s; animation-duration:15s;">🍥</div>
+  <div class="floating-emoji" style="left:55%; animation-delay:1s; animation-duration:16s;">🩷</div>
+  <div class="floating-emoji" style="left:70%; animation-delay:4s; animation-duration:13s;">🎀</div>
+  <div class="floating-emoji" style="left:85%; animation-delay:3s; animation-duration:17s;">❕</div>
+  <div class="floating-emoji" style="left:15%; animation-delay:7s; animation-duration:15s;">🩷</div>
+  <div class="floating-emoji" style="left:80%; animation-delay:6s; animation-duration:14s;">💗</div>
+</div>
+
+<div class="container">
+<div class="section center" style="border:none;box-shadow:none;background:transparent;">
+<div class="logo">
+<img src="https://images2.imgbox.com/f9/f8/hv0bsCjg_o.jpg" alt="logo">
+</div>
+<h1>wawayne</h1>
+<p style="color:var(--dark);opacity:.8;margin:10px 0 20px;">
+คอลมีสา พร้อมบริการม้าก ๆ ๆ 🎀
+</p>
+<div class="badges">
+<div class="badge">🎀 รับทำป้าย</div>
+<div class="badge">💗 รับดูดวง</div>
+<div class="badge">🍥 รับเล่น genshin</div>
+</div>
+<a href="https://docs.google.com/spreadsheets/d/1jMLi0gtvWl0aGvoDaXbfciT0c5AMwGcLVcqDN9ImBVI/edit?usp=drivesdk" class="btn btn-outline">
+เช็คคิวงาน ✨
+</a>
+</div>
+<div class="section">
+<h2>🩷 ขั้นตอนการสั่ง</h2>
+<div class="step"><div class="step-content"><div class="step-num">1</div><div>เลือกบล้อค ตูน ที่ต้องการ</div></div><span>🩷</span></div>
+<div class="step"><div class="step-content"><div class="step-num">2</div><div>แจ้งโทนสี และ ข้อมูลรายละเอียดต่างๆ</div></div><span>🩷</span></div>
+<div class="step"><div class="step-content"><div class="step-num">3</div><div>ชำระเงิน แล้วรอรับงานได้เลยยค่ะ</div></div><span>🩷</span></div>
+</div>
+<div class="section">
+<h2>🍥 rules ,🍥 (กฎของร้าน)</h2>
+<div class="price-row" style="display:block;"><span>• เริ่มงานแล้วจะไม่มีการคืนเงินใดๆทั้งสิ้นค่ะ❕</span></div>
+<div class="price-row" style="display:block;"><span>• ก่อนเริ่มงานหากไม่พร้อมโอนเต็มจำนวน ให้โอนมัดจำเท่านั้น</span></div>
+<div class="price-row" style="display:block;"><span>• พบเจอนำงานไปเกี่ยวกับเอไอจะปรับเอารวยค่า</span></div>
+</div>
+<div class="section">
+<h2>🎀 เงื่อนไขเพิ่มเติม</h2>
+<div class="price-row"><span>ตามปกติรองาน 4-8 ชั่วโมง แล้วแต่คิวของวันนั้นๆ</span><span class="price-tag">🎀</span></div>
+<div class="price-row"><span>งานเร่งมีบวกตามสเกลงาน</span><span class="price-tag">🎀</span></div>
+
+<h2 style="margin-top:25px;">💗 ตัวอย่างผลงาน</h2>
+<div class="portfolio-container">
+  <div class="portfolio-box">
+    <img class="portfolio-img" src="https://images2.imgbox.com/39/fa/5tXLh4PX_o.png" alt="ตัวอย่างงานแนวร้าน">
+    <a href="https://drive.google.com/drive/folders/19LAnvthwucDw3guHIHMaKhqK4PMn1uk8" class="btn btn-main" style="font-size:11px; padding:12px 5px; margin-top:10px;">ตัวอย่างงานแนวร้าน จิ้มตงนิ้❕</a>
+  </div>
+  <div class="portfolio-box">
+    <img class="portfolio-img" src="https://images2.imgbox.com/f3/ba/tRBRx3Rb_o.png" alt="ตัวอย่างงานแนวอื่นๆ">
+    <a href="https://drive.google.com/drive/folders/1kG5CiDhtDE9PpZpyxLe-XrZPaNr7dXcT" class="btn btn-main" style="font-size:11px; padding:12px 5px; margin-top:10px;">ตัวอย่างงานแนวอื่นๆ จิ้มตงนิ้❕</a>
+  </div>
+</div>
+</div>
+<div class="footer">
+<a href="https://line.me/ti/p/yuoCx0JLtu" class="btn btn-main">dm loeyy❕ 🎀</a>
+<div class="socials">
+<a href="https://www.facebook.com/share/1NpJuhR9HX/">Facebook</a>
+<a href="https://line.me/ti/p/yuoCx0JLtu">LINE</a>
+</div>
+<p class="small">
+© 2026 wawayne
+</p>
+</div>
+</div>
+</body>
+</html>
+
